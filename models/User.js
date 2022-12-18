@@ -45,6 +45,10 @@ userSchema.virtual("friendCount").get(function () {
   return this.friends.length;
 });
 
+// thoughtSchema.virtual("thoughtCount").get(function () {
+//   return this.thoughts.length;
+// });
+
 
 // create the user model using userSchema
 const User = model("User", userSchema);
